@@ -1,0 +1,208 @@
+header{
+
+  background-color:#00B333;
+  height: 100px;
+}
+h1, h2{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+body{
+
+  background-color: bisque;
+}
+/* set up */
+section{
+ 
+  margin: 50px;
+}
+
+
+div{
+  color:white;
+
+}
+
+.red {
+  background-color: #B31212;
+}
+.blue {
+  background-color: #19A6FF;
+}
+.green {
+  background-color: #00FF48;
+}
+
+
+header{
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  background-color:#eaff30;
+  border: 5px solid black;
+  height: 80px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  margin: 0;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  width: 300px;
+  border: 5px dashed black;
+}
+
+h1 {
+  display: flex;
+  justify-content: left;
+  margin-left: 5%;
+}
+
+h2 {
+  display: flex;
+  justify-content: right;
+  margin: 20px;
+}
+
+h2 a {
+  margin: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+#aboutMe{
+  background-color:#eaff30;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border: 5px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+#aboutMe #section1{
+  font-size: 50px;
+}
+
+#aboutMe #section2{
+  font-size: 25px;
+}
+
+#work{
+  background-color:#eaff30;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border: 5px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center; 
+  margin: 20px 0;
+}
+
+#additionalApplications{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+#additionalApplications a{
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+
+#mainApplication img {
+  display: flex;
+  width: 500px;
+  height: 300px;
+  border: 5px solid black;
+}
+
+#mainApplication a{
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+}
+
+footer{
+  background-color:#eaff30;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border: 5px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;     
+}
+
+footer #contactMe{
+  display: flex;
+  font-size: 300%;
+}
+
+footer #section2{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  font-size: 300%;
+}
+
+footer #section2 a{
+  color:black;
+}
+
+/* tablets */
+@media screen and (max-width: 992px) {
+#work {
+  grid-template-columns: 1fr;
+  }
+#aboutMe {
+  grid-template-columns: 1fr;
+   }
+footer {
+  grid-template-columns: 1fr;
+      } 
+#additionalApplications{
+  grid-template-columns: 1fr;
+} 
+  }
+
+/* Large smartphones */
+@media screen and (max-width: 768px) {
+#work {
+  grid-template-columns: 1fr;
+}
+#aboutMe {
+  grid-template-columns: 1fr;
+}
+footer {
+  grid-template-columns: 1fr;
+}
+#contactMe{
+  justify-content: center;
+}
+#additionalApplications{
+  grid-template-columns: 1fr;
+}
+}
+
+/* Small smartphones */
+@media screen and (max-width: 576px) {
+#work {
+  grid-template-columns: 1fr;
+    }
+#aboutMe {
+  grid-template-columns: 1fr;
+    }
+footer {
+  grid-template-columns: 1fr;
+    } 
+#additionalApplications{
+  grid-template-columns: 1fr;
+  } 
+}
